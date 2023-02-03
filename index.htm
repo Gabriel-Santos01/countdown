@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2972/2972554.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="countdown">
+          <h1 class="countdownTittle">Falcon 9 block 5 launch in...</h1>
+          <div class="timer">
+            <div class="days">
+              <span>Dias</span>
+              <p class="timerValue" id="days"></p>
+            </div>
+            <p class="timerSeparator">:</p>
+
+            <div class="hours">
+              <span>Horas</span>
+              <p class="timerValue" id="hours"></p>
+            </div>
+            <p class="timerSeparator">:</p>
+
+            <div class="minutes">
+              <span>Minutos</span>
+              <p class="timerValue" id="minutes"></p>
+            </div>
+            <p class="timerSeparator">:</p>
+
+            <div class="seconds">
+              <span>Segundos</span>
+              <p class="timerValue" id="seconds"></p>
+            </div>
+          </div>
+          <p class="countdown_description">
+            Laçamento de satélite de comunicação geoestacionario de alto
+            rendimento by thales Alenia space para a Hispasat.
+          </p>
+
+          <button>
+            <a
+              href="https://www.youtube.com/@SpaceX"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Inscreva-se</a
+            >
+          </button>
+        </div>
+      </div>
+      <img id="rocket" src="./assets/images/Falcon 9.png" alt="rocket" />
+      <img
+        class="topWave"
+        src="./assets/images/top-image.svg"
+        alt="wave to top page" />
+      <img
+        class="bottonWave"
+        src="./assets/images/bottom-image.svg"
+        alt=" wave to botton page" />
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
