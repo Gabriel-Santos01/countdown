@@ -2,7 +2,7 @@
   font-size: 62.5%;
 
   --primary-color: #da2d27;
-  --span-Color: #4d4c59;
+  --span-Color: #26384e;
 }
 
 * {
@@ -95,7 +95,7 @@ body {
 }
 
 .timer span {
-  color: #9c9ab6;
+  color: var(--span-Color);
   font-size: 1.4rem;
 }
 
@@ -113,23 +113,44 @@ h1 {
 }
 
 button {
-  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  font-family: poppins;
+  font-size: 1.6rem;
 
   padding: 1.2rem 3.2rem;
+  background: var(--primary-color);
 
   border-radius: 10px;
   border: none;
 
-  font-family: poppins;
-  font-size: 1.6rem;
   color: white;
 
   cursor: pointer;
   transition: filter 0.2s;
 }
 
-button:hover {
-  filter: brightness(0.9);
+button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button a {
+  display: flex;
+  align-items: center;
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+  transform: translateX(7px);
 }
 
 @media (max-width: 800px) {
