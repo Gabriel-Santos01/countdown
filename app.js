@@ -2,6 +2,7 @@ const days = document.getElementById('days')
 const hours = document.getElementById('hours')
 const minutes = document.getElementById('minutes')
 const seconds = document.getElementById('seconds')
+const title = document.querySelector('.countdownTittle')
 
 const countdown = new Date().getFullYear()
 
@@ -20,6 +21,62 @@ function updateCountdown() {
   hours.innerHTML = h < 10 ? '0' + h : h
   minutes.innerHTML = m < 10 ? '0' + m : m
   seconds.innerHTML = s < 10 ? '0' + s : s
+
+  if (diff <= 0) {
+    clearInterval(timer)
+    title.innerHTML = 'FALCON 9 BLOCK 5 HAS BE LAUNCHED'
+    days.innerHTML = '00'
+    hours.innerHTML = '00'
+    minutes.innerHTML = '00'
+    seconds.innerHTML = '00'
+
+    tsParticles.load('tsparticles', {
+      emitters: [
+        {
+          life: {
+            duration: 3,
+            count: 5
+          },
+          rate: {
+            delay: 0,
+            quantity: 1
+          },
+          position: {
+            x: 0,
+            y: 20
+          },
+          particles: {
+            move: {
+              direction: 'top-right'
+            },
+            color: {
+              value: ['#DA2D27', '#162C55', '#162C55', '#047832']
+            }
+          }
+        },
+        {
+          life: {
+            duration: 3,
+            count: 5
+          },
+          rate: {
+            delay: 0,
+            quantity: 1
+          },
+          position: {
+            x: 100,
+            y: 20
+          },
+          particles: {
+            move: {
+              direction: 'top-left'
+            }
+          }
+        }
+      ],
+      preset: 'confetti'
+    })
+  }
 }
 
-setInterval(updateCountdown, 1000)
+let timer = setInterval(updateCountdown, 1000)
