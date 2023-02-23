@@ -6,7 +6,7 @@ const title = document.querySelector('.countdownTittle')
 
 const countdown = new Date().getFullYear()
 
-const countdownTime = new Date(`February 11 ${countdown} 02:07:00`)
+const countdownTime = new Date(`February 23 ${countdown} 15:37:00`)
 
 function updateCountdown() {
   const currentTime = new Date()
@@ -24,7 +24,7 @@ function updateCountdown() {
 
   if (diff <= 0) {
     clearInterval(timer)
-    title.innerHTML = 'FALCON 9 BLOCK 5 HAS BE LAUNCHED'
+    title.innerHTML = 'FALCON 9 BLOCK 5 Group 6-1 HAS BE LAUNCHED'
     days.innerHTML = '00'
     hours.innerHTML = '00'
     minutes.innerHTML = '00'
@@ -48,9 +48,6 @@ function updateCountdown() {
           particles: {
             move: {
               direction: 'top-right'
-            },
-            color: {
-              value: ['#DA2D27', '#162C55', '#162C55', '#047832']
             }
           }
         },
