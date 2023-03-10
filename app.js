@@ -6,7 +6,7 @@ const title = document.querySelector('.countdownTittle')
 
 const countdown = new Date().getFullYear()
 
-const countdownTime = new Date(`February 23 ${countdown} 15:37:00`)
+const countdownTime = new Date(`March 14 ${countdown} 21:30:00`)
 
 function updateCountdown() {
   const currentTime = new Date()
@@ -24,7 +24,7 @@ function updateCountdown() {
 
   if (diff <= 0) {
     clearInterval(timer)
-    title.innerHTML = 'FALCON 9 BLOCK 5 Group 6-1 HAS BE LAUNCHED'
+    title.innerHTML = 'DRAGON CRS-2 SPX-27 HAS BE LAUNCHED'
     days.innerHTML = '00'
     hours.innerHTML = '00'
     minutes.innerHTML = '00'
