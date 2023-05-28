@@ -6,7 +6,7 @@ const title = document.querySelector('.countdownTittle')
 
 const countdown = new Date().getFullYear()
 
-const countdownTime = new Date(`may 24 ${countdown} 00:25:00`)
+const countdownTime = new Date(`may 31 ${countdown} 00:02:27`)
 
 function updateCountdown() {
   const currentTime = new Date()
